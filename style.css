@@ -23,21 +23,38 @@ body {
     box-shadow: 0 10px 30px #00000055;
 }
 
+/* عنوان اصلی و سکه */
+
 .title {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
 }
 
 .title img {
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
+    max-width: 40vw;
     object-fit: contain;
 }
+
+/* متن عنوان */
+
+h1 {
+    margin: 10px 0;
+
+    font-size: clamp(70px, 12vw, 150px);
+
+    line-height: 0.9;
+
+    letter-spacing: -3px;
+}
+
 .sound-card h2 {
     margin-top: 50px;
 }
+
 
 /* هدر */
 
@@ -110,7 +127,7 @@ nav a:hover {
 }
 
 .hero-text {
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 .small-title {
@@ -121,16 +138,6 @@ nav a:hover {
     letter-spacing: 3px;
 
     font-size: 20px;
-}
-
-h1 {
-    margin: 10px 0;
-
-    font-size: clamp(70px, 12vw, 150px);
-
-    line-height: 0.9;
-
-    letter-spacing: -3px;
 }
 
 .description {
@@ -270,6 +277,16 @@ footer {
         padding: 60px 25px;
     }
 
+    .title {
+        gap: 10px;
+    }
+
+    .title img {
+        width: 180px;
+        height: 180px;
+        max-width: 35vw;
+    }
+
     h1 {
         font-size: 70px;
     }
@@ -289,4 +306,4 @@ footer {
     .button {
         text-align: center;
     }
-}      
+}
