@@ -31,12 +31,10 @@ body {
 }
 
 .title img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: contain;
 }
-
-
 .sound-card h2 {
     margin-top: 50px;
 }
