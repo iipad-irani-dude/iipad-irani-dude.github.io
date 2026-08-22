@@ -1,268 +1,127 @@
-* {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
 
-body {
-    margin: 0;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    font-family: Tahoma, Arial, sans-serif;
+    <title>دو گهرونی</title>
 
-    background: #0b0b12;
-    color: white;
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
 
-/* هدر */
+    <header>
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
+        <div class="logo">
+            DO GHERONI
+        </div>
 
-    height: 70px;
+        <nav>
+            <a href="#home">خانه</a>
+            <a href="#about">درباره</a>
+            <a href="#sounds">صداها</a>
+        </nav>
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    </header>
 
-    padding: 0 8%;
 
-    background: rgba(11, 11, 18, 0.9);
+    <main>
 
-    backdrop-filter: blur(10px);
+        <section id="home" class="hero">
 
-    border-bottom: 1px solid #252535;
-}
+            <div class="hero-text">
 
-.logo {
-    direction: ltr;
+                <p class="small-title">
+                    به وبسایت
+                </p>
 
-    font-size: 20px;
-    font-weight: bold;
+                <h1>
+                    دو<br>گهرونی
+                </h1>
 
-    letter-spacing: 3px;
-}
+                <p class="description">
+                    به گوشه کوچیک من در اینترنت خوش آمدید! 🌐
+                </p>
 
-nav {
-    display: flex;
-    gap: 25px;
-}
+                <div class="buttons">
 
-nav a {
-    color: #aaa;
+                    <a href="#about" class="button">
+                        بیشتر بدانید
+                    </a>
 
-    text-decoration: none;
+                    <a href="#sounds" class="button secondary">
+                        صداها 🎵
+                    </a>
 
-    transition: 0.2s;
-}
+                </div>
 
-nav a:hover {
-    color: white;
-}
+            </div>
 
+        </section>
 
-/* صفحه اصلی */
 
-.hero {
-    min-height: calc(100vh - 70px);
+        <section id="about" class="section">
 
-    display: flex;
-    align-items: center;
+            <div class="card">
 
-    padding: 80px 10%;
+                <h2>👋 سلام!</h2>
 
-    background:
-        radial-gradient(
-            circle at 30% 40%,
-            #30208055,
-            transparent 40%
-        ),
-        radial-gradient(
-            circle at 80% 80%,
-            #0066ff33,
-            transparent 40%
-        );
-}
+                <p>
+                    !سلام
+                </p>
 
-.hero-text {
-    max-width: 800px;
-}
+                <p>
+                    به وبسایت من خوش آمدید!
+                </p>
 
-.small-title {
-    color: #8f8cff;
+                <p>
+                    این وبسایت با HTML و CSS ساخته شده
+                    و با استفاده از GitHub Pages میزبانی می‌شود.
+                </p>
 
-    font-weight: bold;
+            </div>
 
-    letter-spacing: 3px;
+        </section>
 
-    font-size: 20px;
-}
 
-h1 {
-    margin: 10px 0;
+        <section id="sounds" class="section">
 
-    font-size: clamp(70px, 12vw, 150px);
+            <div class="card sound-card">
 
-    line-height: 0.9;
+                <h2>🎵 صدا</h2>
 
-    letter-spacing: -3px;
-}
+                <p>
+                    به این صدا گوش دهید!
+                </p>
 
-.description {
-    margin-top: 35px;
+                <audio controls>
+                    <source src="./nokia-arabi.mp3" type="audio/mpeg">
+                    مرورگر شما از پخش صدا پشتیبانی نمی‌کند.
+                </audio>
 
-    font-size: 20px;
+                <br>
 
-    color: #aaa;
-}
+                <a href="./nokia-arabi.mp3" download class="download-button">
+                    💾 دانلود صدا
+                </a>
 
+            </div>
 
-/* دکمه‌ها */
+        </section>
 
-.buttons {
-    display: flex;
+    </main>
 
-    gap: 15px;
 
-    margin-top: 35px;
-}
+    <footer>
 
-.button,
-.download-button {
-    display: inline-block;
+        <p>
+            ساخته شده با ❤️ و مقدار زیادی HTML
+        </p>
 
-    padding: 14px 24px;
+    </footer>
 
-    border-radius: 10px;
+</body>
 
-    text-decoration: none;
-
-    font-weight: bold;
-
-    background: white;
-
-    color: #111;
-
-    transition: 0.2s;
-}
-
-.button:hover,
-.download-button:hover {
-    transform: translateY(-3px);
-
-    box-shadow: 0 8px 25px #00000066;
-}
-
-.button.secondary {
-    background: #222231;
-
-    color: white;
-}
-
-
-/* بخش‌ها */
-
-.section {
-    padding: 100px 10%;
-}
-
-.card {
-    max-width: 800px;
-
-    margin: auto;
-
-    padding: 40px;
-
-    background: #151520;
-
-    border: 1px solid #29293a;
-
-    border-radius: 20px;
-
-    box-shadow: 0 20px 50px #00000055;
-}
-
-.card h2 {
-    font-size: 32px;
-
-    margin-top: 0;
-}
-
-.card p {
-    color: #bbb;
-
-    font-size: 18px;
-
-    line-height: 1.8;
-}
-
-
-/* پخش صدا */
-
-.sound-card audio {
-    width: 100%;
-
-    margin: 20px 0;
-}
-
-.download-button {
-    background: #8f8cff;
-
-    color: white;
-}
-
-
-/* پایین صفحه */
-
-footer {
-    padding: 40px;
-
-    text-align: center;
-
-    color: #666;
-
-    border-top: 1px solid #20202c;
-}
-
-
-/* موبایل */
-
-@media (max-width: 600px) {
-
-    header {
-        padding: 0 20px;
-    }
-
-    nav {
-        gap: 10px;
-    }
-
-    nav a {
-        font-size: 14px;
-    }
-
-    .hero {
-        padding: 60px 25px;
-    }
-
-    h1 {
-        font-size: 70px;
-    }
-
-    .section {
-        padding: 60px 25px;
-    }
-
-    .card {
-        padding: 25px;
-    }
-
-    .buttons {
-        flex-direction: column;
-    }
-
-    .button {
-        text-align: center;
-    }
-}
+</html>
