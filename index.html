@@ -1,38 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My GitHub Website</title>
+    <title>دو گهرونی</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <main class="container">
+    <header>
 
-        <div class="box">
-            <h1>Welcome to my website!</h1>
-
-            <p>
-                !سلام
-            </p>
-
-            <p>
-                ! به وبسایت من خوش امدید 
-            </p>
-            <a href="nokia-arabi.mp3" download>
-                !دانلود صدا
-            </a>
-            <audio controls>
-                    <source src="./nokia-arabi.mp3" type="audio/mpeg">
-                        Your browser does not support audio.
-            </audio>
+        <div class="logo">
+            DO GHERONI
         </div>
+
+        <nav>
+            <a href="#home">خانه</a>
+            <a href="#about">درباره</a>
+            <a href="#sounds">صداها</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-text">
+
+                <p class="small-title">
+                    به وبسایت
+                </p>
+
+                <h1>
+                    دو<br>گهرونی
+                </h1>
+
+                <p class="description">
+                    به گوشه کوچیک من در اینترنت خوش آمدید! 🌐
+                </p>
+
+                <div class="buttons">
+
+                    <a href="#about" class="button">
+                        بیشتر بدانید
+                    </a>
+
+                    <a href="#sounds" class="button secondary">
+                        صداها 🎵
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="about" class="section">
+
+            <div class="card">
+
+                <h2>
+                    👋 سلام!
+                </h2>
+
+                <p>
+                    !سلام
+                </p>
+
+                <p>
+                    به وبسایت من خوش آمدید!
+                </p>
+
+                <p>
+                    این وبسایت با HTML و CSS ساخته شده
+                    و با استفاده از GitHub Pages میزبانی می‌شود.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section id="sounds" class="section">
+
+            <div class="card sound-card">
+
+                <h2>
+                    🎵 صدا
+                </h2>
+
+                <p>
+                    به این صدا گوش دهید!
+                </p>
+
+                <audio controls>
+                    <source src="./nokia-arabi.mp3" type="audio/mpeg">
+                    مرورگر شما از پخش صدا پشتیبانی نمی‌کند.
+                </audio>
+
+                <br>
+
+                <a href="./nokia-arabi.mp3" download class="download-button">
+                    💾 دانلود صدا
+                </a>
+
+            </div>
+
+        </section>
 
     </main>
 
+
+    <footer>
+
+        <p>
+            ساخته شده با ❤️ و مقدار زیادی HTML
+        </p>
+
+    </footer>
+
 </body>
+
 </html>
