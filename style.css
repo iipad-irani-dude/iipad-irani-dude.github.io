@@ -23,6 +23,19 @@ body {
     box-shadow: 0 10px 30px #00000055;
 }
 
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.title img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
 
 .sound-card h2 {
     margin-top: 50px;
