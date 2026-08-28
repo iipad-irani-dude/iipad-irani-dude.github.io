@@ -202,7 +202,19 @@
                 <p>
                     برای همایت با خرج دو قرون به انجا مراجهعه کنید ❤️
                 </p>
-                <a href="hello.html">اینجا</a>
+                <video id="myVideo" width="600">
+                    <source src="0001-0250.mp4" type="video/mp4">
+                </video>
+
+                <button onclick="playVideo()">▶️ Play</button>
+
+                    <script>
+                        function playVideo() {
+                        const video = document.getElementById("myVideo");
+                        video.currentTime = 0;
+                        video.play();
+                    }
+                    </script>
 
             </div>
 
